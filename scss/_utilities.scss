@@ -15,6 +15,18 @@
   }
 }
 
+.w-100 { width: 100%; }
+
+.fixed-top {
+  top: 0;
+  left: 0;
+}
+
+.fixed-bottom {
+  bottom: 0;
+  left: 0;
+}
+
 @each $val in $overflow {
   .overflow-#{$val} {
     overflow: $val;
@@ -34,8 +46,22 @@
     border: $i solid;
   }
 
+  @each $side in $sides {
+    .margin-#{$side}-#{$i} {
+      margin-#{$side}: 5px * $i;
+    }
+
+    .padding-#{$side}-#{$i} {
+      padding-#{$side}: 5px * $i;
+    }
+
+    .border-#{$side}-#{$i} {
+      border-#{$side}: $i solid;
+    }
+  }
+
   .font-size-#{$i} {
-    font-size: 0.25rem * $i; 
+    font-size: 0.25rem * $i;
   }
 
   @if $i < 6 {
@@ -49,6 +75,11 @@
       font-weight: 100 * $i;
     }
   }
+}
+
+.mx-auto {
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .shadow-blur {
