@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'mixins';
 
 .container {
   margin: 0 auto;
@@ -8,10 +9,6 @@
 .container-fluid {
   width: 100%;
 }
-
-/*
-GRID
-*/
 
 .grid {
   display: grid;
@@ -80,10 +77,6 @@ GRID
 
 .justify-c-space-evenly {
   justify-content: space-evenly;
-}
-
-.gap-0 {
-  grid-gap: 0;
 }
 
 .gap-1 {
@@ -167,7 +160,7 @@ GRID
 @for $i from 1 through 10 {
   .row-auto-#{$i} {
     grid-auto-rows:  10vh * $i;
-  } 
+  }
 }
 
 .col-span-end {
@@ -190,32 +183,20 @@ GRID
   grid-column-end : span 3;
 }
 
-.d-none {
-  display: none;
-}
-
 .d-none-sm {
-  display: initial;
-  @media only screen and (max-size: 720px) {
+  @media only screen and (max-width: 720px) {
     display: none;
   }
 }
 
 .d-none-md {
-  display: initial;
-  @media only screen and (max-size: 720px) {
-    display: initial;
-  }
-  @media only screen and (max-size: 1024px) {
+  @media only screen and (max-width: 1024px) {
     display: none;
   }
 }
 
-.d-none-lg {
-  display: initial;
-  @media only screen and (min-size: 1024px) {
-    display: none;
-  }
+.d-none {
+  display: none;
 }
 
 @media only screen and (max-width: 720px) {

@@ -1,0 +1,11 @@
+@mixin span($num, $dim: "row") {
+  grid-#{dim}-end: $num;
+}
+
+@mixin gap($num, $dim: "") {
+  @if $dim == "" {
+    grid-gap: $num;
+  } @else {
+    grid-#{dim}-gap: $num;
+  }
+}
