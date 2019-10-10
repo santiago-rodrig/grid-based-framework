@@ -1,64 +1,574 @@
-/*
-Error: Invalid CSS after "$spacing: "0"": expected selector or at-rule, was ": 0,"1": 5px, "..."
-        on line 4 of scss/_variables.scss
-        from line 1 of scss/chill-grid.scss
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,400,700,900&display=swap");
+/* COLORS */
+/* FONT */
+.container {
+  margin: 0 auto;
+  max-width: 960px;
+}
 
-1: $container-width: 960px;
-2: $items: center, start, end;
-3: $content: center, space-between, space-around;
-4: $spacing: "0": 0,"1": 5px, "2": 10px, "3": 30px;
-5: $displays: block, inline-block, flex, none, inherit;
+.container-fluid {
+  width: 100%;
+}
 
-Backtrace:
-scss/_variables.scss:4
-scss/chill-grid.scss:1
-/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
-/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1238:in `expected'
-/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:42:in `parse'
-/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:414:in `_to_tree'
-/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:321:in `to_tree'
-/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:323:in `block in visit_import'
-/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:88:in `block in with_import'
-/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
-/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:88:in `with_import'
-/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
-/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
-/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
-/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
-/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
-/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
-/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:10:in `visit'
-/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:36:in `css_tree'
-/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
-/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
-/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
-/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:320:in `block in watch'
-/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"$spacing: \"0\"\": expected selector or at-rule, was \": 0,\"1\": 5px, \"...\"\A         on line 4 of scss/_variables.scss\A         from line 1 of scss/chill-grid.scss\A \A 1: $container-width: 960px;\A 2: $items: center, start, end;\A 3: $content: center, space-between, space-around;\A 4: $spacing: \"0\": 0,\"1\": 5px, \"2\": 10px, \"3\": 30px;\A 5: $displays: block, inline-block, flex, none, inherit;"; }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.align-i-center {
+  align-items: center;
+}
+
+.justify-i-center {
+  justify-items: center;
+}
+
+.align-self-center {
+  align-self: center;
+}
+
+.justify-self-center {
+  justify-self: center;
+}
+
+.align-i-start {
+  align-items: start;
+}
+
+.justify-i-start {
+  justify-items: start;
+}
+
+.align-self-start {
+  align-self: start;
+}
+
+.justify-self-start {
+  justify-self: start;
+}
+
+.align-i-end {
+  align-items: end;
+}
+
+.justify-i-end {
+  justify-items: end;
+}
+
+.align-self-end {
+  align-self: end;
+}
+
+.justify-self-end {
+  justify-self: end;
+}
+
+.align-c-center {
+  align-content: center;
+}
+
+.justify-c-center {
+  justify-content: center;
+}
+
+.align-c-space-between {
+  align-content: space-between;
+}
+
+.justify-c-space-between {
+  justify-content: space-between;
+}
+
+.align-c-space-around {
+  align-content: space-around;
+}
+
+.justify-c-space-around {
+  justify-content: space-around;
+}
+
+.justify-c-space-evenly {
+  justify-content: space-evenly;
+}
+
+.gap-0 {
+  grid-gap: 0;
+}
+
+.gap-r-0 {
+  grid-row-gap: 0;
+}
+
+.gap-c-0 {
+  grid-column-gap: 0;
+}
+
+.gap-1 {
+  grid-gap: 5px;
+}
+
+.gap-r-1 {
+  grid-row-gap: 5px;
+}
+
+.gap-c-1 {
+  grid-column-gap: 5px;
+}
+
+.gap-2 {
+  grid-gap: 10px;
+}
+
+.gap-r-2 {
+  grid-row-gap: 10px;
+}
+
+.gap-c-2 {
+  grid-column-gap: 10px;
+}
+
+.gap-3 {
+  grid-gap: 30px;
+}
+
+.gap-r-3 {
+  grid-row-gap: 30px;
+}
+
+.gap-c-3 {
+  grid-column-gap: 30px;
+}
+
+.grid-flow-r {
+  grid-auto-flow: row;
+}
+
+.grid-flow-c {
+  grid-auto-flow: column;
+}
+
+.grid-flow-d {
+  grid-auto-flow: dense;
+}
+
+.row-s-1 {
+  grid-row-start: 1;
+}
+
+.row-span-1 {
+  grid-dim-end: 1;
+}
+
+.col-s-1 {
+  grid-column-start: 1;
+}
+
+.col-span-1 {
+  grid-dim-end: 1;
+}
+
+.grid-template-rows-1 {
+  grid-template-rows: repeat(1, 1fr);
+}
+
+.row-s-2 {
+  grid-row-start: 2;
+}
+
+.row-span-2 {
+  grid-dim-end: 2;
+}
+
+.col-s-2 {
+  grid-column-start: 2;
+}
+
+.col-span-2 {
+  grid-dim-end: 2;
+}
+
+.grid-template-rows-2 {
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.row-s-3 {
+  grid-row-start: 3;
+}
+
+.row-span-3 {
+  grid-dim-end: 3;
+}
+
+.col-s-3 {
+  grid-column-start: 3;
+}
+
+.col-span-3 {
+  grid-dim-end: 3;
+}
+
+.grid-template-rows-3 {
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.row-s-4 {
+  grid-row-start: 4;
+}
+
+.row-span-4 {
+  grid-dim-end: 4;
+}
+
+.col-s-4 {
+  grid-column-start: 4;
+}
+
+.col-span-4 {
+  grid-dim-end: 4;
+}
+
+.grid-template-rows-4 {
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.row-s-5 {
+  grid-row-start: 5;
+}
+
+.row-span-5 {
+  grid-dim-end: 5;
+}
+
+.col-s-5 {
+  grid-column-start: 5;
+}
+
+.col-span-5 {
+  grid-dim-end: 5;
+}
+
+.grid-template-rows-5 {
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.row-s-6 {
+  grid-row-start: 6;
+}
+
+.row-span-6 {
+  grid-dim-end: 6;
+}
+
+.col-s-6 {
+  grid-column-start: 6;
+}
+
+.col-span-6 {
+  grid-dim-end: 6;
+}
+
+.grid-template-rows-6 {
+  grid-template-rows: repeat(6, 1fr);
+}
+
+.row-s-7 {
+  grid-row-start: 7;
+}
+
+.row-span-7 {
+  grid-dim-end: 7;
+}
+
+.col-s-7 {
+  grid-column-start: 7;
+}
+
+.col-span-7 {
+  grid-dim-end: 7;
+}
+
+.grid-template-rows-7 {
+  grid-template-rows: repeat(7, 1fr);
+}
+
+.row-s-8 {
+  grid-row-start: 8;
+}
+
+.row-span-8 {
+  grid-dim-end: 8;
+}
+
+.col-s-8 {
+  grid-column-start: 8;
+}
+
+.col-span-8 {
+  grid-dim-end: 8;
+}
+
+.grid-template-rows-8 {
+  grid-template-rows: repeat(8, 1fr);
+}
+
+.row-s-9 {
+  grid-row-start: 9;
+}
+
+.row-span-9 {
+  grid-dim-end: 9;
+}
+
+.col-s-9 {
+  grid-column-start: 9;
+}
+
+.col-span-9 {
+  grid-dim-end: 9;
+}
+
+.grid-template-rows-9 {
+  grid-template-rows: repeat(9, 1fr);
+}
+
+.row-s-10 {
+  grid-row-start: 10;
+}
+
+.row-span-10 {
+  grid-dim-end: 10;
+}
+
+.col-s-10 {
+  grid-column-start: 10;
+}
+
+.col-span-10 {
+  grid-dim-end: 10;
+}
+
+.grid-template-rows-10 {
+  grid-template-rows: repeat(10, 1fr);
+}
+
+.row-s-11 {
+  grid-row-start: 11;
+}
+
+.row-span-11 {
+  grid-dim-end: 11;
+}
+
+.col-s-11 {
+  grid-column-start: 11;
+}
+
+.col-span-11 {
+  grid-dim-end: 11;
+}
+
+.grid-template-rows-11 {
+  grid-template-rows: repeat(11, 1fr);
+}
+
+.row-s-12 {
+  grid-row-start: 12;
+}
+
+.row-span-12 {
+  grid-dim-end: 12;
+}
+
+.col-s-12 {
+  grid-column-start: 12;
+}
+
+.col-span-12 {
+  grid-dim-end: 12;
+}
+
+.grid-template-rows-12 {
+  grid-template-rows: repeat(12, 1fr);
+}
+
+.row-auto-1 {
+  grid-auto-rows: 10vh;
+}
+
+.row-auto-2 {
+  grid-auto-rows: 20vh;
+}
+
+.row-auto-3 {
+  grid-auto-rows: 30vh;
+}
+
+.row-auto-4 {
+  grid-auto-rows: 40vh;
+}
+
+.row-auto-5 {
+  grid-auto-rows: 50vh;
+}
+
+.row-auto-6 {
+  grid-auto-rows: 60vh;
+}
+
+.row-auto-7 {
+  grid-auto-rows: 70vh;
+}
+
+.row-auto-8 {
+  grid-auto-rows: 80vh;
+}
+
+.row-auto-9 {
+  grid-auto-rows: 90vh;
+}
+
+.row-auto-10 {
+  grid-auto-rows: 100vh;
+}
+
+.col-span-end {
+  grid-column-end: -1;
+}
+
+.row-span-end {
+  grid-row-end: -1;
+}
+
+.col-responsive-1612 {
+  grid-dim-end: 1;
+}
+
+.col-responsive-136 {
+  grid-dim-end: 2;
+}
+
+.col-responsive-234 {
+  grid-dim-end: 3;
+}
+
+.col-responsive-124 {
+  grid-dim-end: 4;
+}
+
+.col-responsive-144 {
+  grid-dim-end: 4;
+}
+
+.d-iblock-sm {
+  display: none;
+}
+@media only screen and (max-width: 720px) {
+  .d-iblock-sm {
+    display: inline-block;
+  }
+}
+
+.d-block {
+  display: block;
+}
+
+@media only screen and (max-width: 1023px) {
+  .d-md-block {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 719px) {
+  .d-sm-block {
+    display: block;
+  }
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+@media only screen and (max-width: 1023px) {
+  .d-md-inline-block {
+    display: inline-block;
+  }
+}
+
+@media only screen and (max-width: 719px) {
+  .d-sm-inline-block {
+    display: inline-block;
+  }
+}
+
+.d-flex {
+  display: flex;
+}
+
+@media only screen and (max-width: 1023px) {
+  .d-md-flex {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 719px) {
+  .d-sm-flex {
+    display: flex;
+  }
+}
+
+.d-none {
+  display: none;
+}
+
+@media only screen and (max-width: 1023px) {
+  .d-md-none {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 719px) {
+  .d-sm-none {
+    display: none;
+  }
+}
+
+.d-inherit {
+  display: inherit;
+}
+
+@media only screen and (max-width: 1023px) {
+  .d-md-inherit {
+    display: inherit;
+  }
+}
+
+@media only screen and (max-width: 719px) {
+  .d-sm-inherit {
+    display: inherit;
+  }
+}
+
+@media only screen and (max-width: 719px) {
+  .col-responsive-136, .col-responsive-1612, .col-responsive-124, .col-responsive-144 {
+    grid-dim-end: 12;
+  }
+
+  .col-responsive-234 {
+    grid-dim-end: 6;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .col-responsive-124 {
+    grid-dim-end: 2;
+  }
+
+  .col-responsive-136 .col-responsive-234 {
+    grid-dim-end: 4;
+  }
+
+  .col-responsive-1612 {
+    grid-dim-end: 6;
+  }
+}
+
+/*# sourceMappingURL=chill-grid.css.map */
