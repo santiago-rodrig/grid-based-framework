@@ -15,112 +15,50 @@
   grid-template-columns: repeat(12, 1fr);
 }
 
-.align-i-stretch {
-  align-items: stretch
+@each $pos in $items {
+  .align-i-#{$pos} {
+    align-items: $pos;
+  }
+
+  .justify-i-#{$pos} {
+    justify-items: $pos;
+  }
+
+  .align-self-#{$pos} {
+    align-self: $pos;
+  }
+
+  .justify-self-#{$pos} {
+    justify-self: $pos;
+  }
 }
 
-.align-i-center {
-  align-items: center
-}
+@each $val in $content {
+  .align-c-#{$val} {
+    align-content: $val;
+  }
 
-.align-i-start {
-  align-items: start
-}
-
-.align-i-end {
-  align-items: end
-}
-
-.align-c-start {
-  align-content: start;
-}
-
-.align-c-center {
-  align-content: center;
-}
-
-.align-c-space-between {
-  align-content: space-between;
-}
-
-.align-c-space-around {
-  align-content: space-around;
-}
-
-.justify-i-center {
-  justify-items: center
-}
-
-.justify-i-start {
-  justify-items: start
-}
-
-.justify-i-end {
-  justify-items: end
-}
-
-.justify-c-start {
-  justify-content: start;
-}
-
-.justify-c-center {
-  justify-content: center;
-}
-
-.justify-c-space-between {
-  justify-content: space-between;
-}
-
-.justify-c-space-around {
-  justify-content: space-around;
+  .justify-c-#{$val} {
+    justify-content: $val;
+  }
 }
 
 .justify-c-space-evenly {
   justify-content: space-evenly;
 }
 
-.gap-1 {
-  grid-gap: 5px;
-}
+@each $num, $val in $spacing {
+  .gap-#{$num} {
+    grid-gap: $val;
+  }
 
-.gap-2 {
-  grid-gap: 10px;
-}
+  .gap-r-#{$num} {
+    grid-row-gap: $val;
+  }
 
-.gap-3 {
-  grid-gap: 30px;
-}
-
-.gap-r-0 {
-  grid-row-gap: 0;
-}
-
-.gap-r-1 {
-  grid-row-gap: 5px;
-}
-
-.gap-r-2 {
-  grid-row-gap: 10px;
-}
-
-.gap-r-3 {
-  grid-row-gap: 30px;
-}
-
-.gap-c-0 {
-  grid-column-gap: 0;
-}
-
-.gap-c-1 {
-  grid-column-gap: 5px;
-}
-
-.gap-c-2 {
-  grid-column-gap: 10px;
-}
-
-.gap-c-3 {
-  grid-column-gap: 30px;
+  .gap-c-#{$num} {
+    grid-column-gap: $val;
+  }
 }
 
 .grid-flow-r {
@@ -141,7 +79,7 @@
   }
 
   .row-span-#{$i} {
-    grid-row-end: span $i;
+    @include span($i, "row");
   }
 
   .col-s-#{$i} {
@@ -149,7 +87,7 @@
   }
 
   .col-span-#{$i} {
-    grid-column-end: span $i;
+    @include span($i);
   }
 
   .grid-template-rows-#{$i} {
@@ -171,62 +109,45 @@
   grid-row-end: -1;
 }
 
-.col-responsive-136 {
-  grid-column-end : span 2;
+.col-responsive-1612 {
+  @include span(1);
 }
 
-.col-responsive-1612 {
-  grid-column-end : span 1;
+.col-responsive-136 {
+  @include span(2);
 }
 
 .col-responsive-234, .col-responsive-134 {
-  grid-column-end : span 3;
-}
-
-.d-none {
-  display: none;
+  @include span(3);
 }
 
 .d-iblock-sm {
   display: none;
-  @media only screen and (max-size: 720px) {
+  @media only screen and (max-width: 720px) {
     display: inline-block;
   }
 }
 
-.d-none-sm {
-  @media only screen and (max-width: 720px) {
-    display: none;
-  }
+@each $d in $displays {
+  @include set_display($d);
 }
 
-.d-none-md {
-  @media only screen and (max-width: 1024px) {
-    display: none;
-  }
-}
-
-.d-none {
-  display: none;
-}
-
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 719px) {
   .col-responsive-136, .col-responsive-1612, .col-responsive-134 {
-    grid-column-end : span 12;
+    @include span(12);
   }
   .col-responsive-234 {
-    grid-column-end : span 6;
+    @include span(6);
   }
 }
 
-@media only screen and (max-width: 1024px) {
-  .col-responsive-136 {
-    grid-column-end : span 4;
+@media only screen and (max-width: 1023px) {
+  .col-responsive-136
+  .col-responsive-234,
+  .col-responsive-134 {
+    @include span(4);
   }
   .col-responsive-1612 {
-    grid-column-end: span 6;
-  }
-  .col-responsive-234, .col-responsive-134 {
-    grid-column-end : span 4;
+    @include span(6);
   }
 }
