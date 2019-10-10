@@ -183,6 +183,17 @@
   grid-column-end : span 3;
 }
 
+.d-none {
+  display: none;
+}
+
+.d-iblock-sm {
+  display: none;
+  @media only screen and (max-size: 720px) {
+    display: inline-block;
+  }
+}
+
 .d-none-sm {
   @media only screen and (max-width: 720px) {
     display: none;

@@ -324,6 +324,15 @@
 .col-responsive-234, .col-responsive-134 {
   grid-column-end: span 3; }
 
+.d-none {
+  display: none; }
+
+.d-iblock-sm {
+  display: none; }
+  @media only screen and (max-size: 720px) {
+    .d-iblock-sm {
+      display: inline-block; } }
+
 @media only screen and (max-width: 720px) {
   .d-none-sm {
     display: none; } }
