@@ -9,6 +9,7 @@ $position: static, fixed, absolute, relative, sticky;
 $overflow: auto, scroll, hidden, show;
 $talign: left, right, center;
 $sides: top, left, right, bottom;
+$sizes: (small: "max-width: 719px", medium: "max-width: 1023px", large: "min-width: 1024px");
 
 $shadow: #a3aaaf;
 $dark-grey: #4a4a4a;

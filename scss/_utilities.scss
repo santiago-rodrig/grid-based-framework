@@ -27,6 +27,17 @@
   left: 0;
 }
 
+@each $side in $sides {
+  @each $size, $query in $sizes {
+    .fixed-#{$side}-#{$size} {
+      @media only screen and (#{$query}) {
+        position: fixed;
+        #{side}: 0;
+      }
+    }
+  }
+}
+
 @each $val in $overflow {
   .overflow-#{$val} {
     overflow: $val;
@@ -98,4 +109,9 @@
 
 .list-none {
   list-style: none;
+}
+
+.link-reset {
+  text-decoration: none;
+  color: inherit;
 }
