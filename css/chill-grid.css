@@ -1,0 +1,64 @@
+/*
+Error: Invalid CSS after "...rid-row-start: ": expected expression (e.g. 1px, bold), was "$1;"
+        on line 79 of scss/chill-grid.scss
+
+74:   grid-auto-flow: dense;
+75: }
+76: 
+77: @for $i from 1 through 12 {
+78:   .row-s-#{$i} {
+79:     grid-row-start: $1;
+80:   }
+81: 
+82:   .row-span-#{$i} {
+83:     grid-row-end: span $i;
+84:   }
+
+Backtrace:
+scss/chill-grid.scss:79
+/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
+/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/script/lexer.rb:240:in `expected!'
+/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:855:in `assert_expr'
+/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:68:in `parse'
+/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1164:in `sass_script'
+/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1002:in `value!'
+/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:807:in `block in try_declaration'
+/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1284:in `rethrow'
+/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:820:in `try_declaration'
+/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:743:in `declaration_or_ruleset'
+/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:708:in `block_child'
+/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:697:in `block_contents'
+/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:689:in `block'
+/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:758:in `declaration_or_ruleset'
+/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:708:in `block_child'
+/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:697:in `block_contents'
+/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:689:in `block'
+/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:301:in `for_directive'
+/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:234:in `special_directive'
+/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:209:in `directive'
+/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:707:in `block_child'
+/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
+/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:137:in `stylesheet'
+/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:41:in `parse'
+/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:414:in `_to_tree'
+/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
+/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:320:in `block in watch'
+/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+/home/santiago/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...rid-row-start: \": expected expression (e.g. 1px, bold), was \"$1;\"\A         on line 79 of scss/chill-grid.scss\A \A 74:   grid-auto-flow: dense;\A 75: }\A 76: \A 77: @for $i from 1 through 12 {\A 78:   .row-s-#{$i} {\A 79:     grid-row-start: $1;\A 80:   }\A 81: \A 82:   .row-span-#{$i} {\A 83:     grid-row-end: span $i;\A 84:   }"; }

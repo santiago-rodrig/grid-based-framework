@@ -1,0 +1,105 @@
+@import 'variables';
+
+.container {
+  margin: 0 auto;
+  max-width: $container-width;
+}
+
+.container-fluid {
+  widht: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.gap-0 {
+  grid-gap: 0;
+}
+
+.gap-1 {
+  grid-gap: 5px;
+}
+
+.gap-2 {
+  grid-gap: 10px;
+}
+
+.gap-3 {
+  grid-gap: 30px;
+}
+
+.gap-r-0 {
+  grid-row-gap: 0;
+}
+
+.gap-r-1 {
+  grid-row-gap: 5px;
+}
+
+.gap-r-2 {
+  grid-row-gap: 10px;
+}
+
+.gap-r-3 {
+  grid-row-gap: 30px;
+}
+
+.gap-c-0 {
+  grid-column-gap: 0;
+}
+
+.gap-c-1 {
+  grid-column-gap: 5px;
+}
+
+.gap-c-2 {
+  grid-column-gap: 10px;
+}
+
+.gap-c-3 {
+  grid-column-gap: 30px;
+}
+
+.grid-flow-r {
+  grid-auto-flow: row;
+}
+
+.grid-flow-c {
+  grid-auto-flow: column;
+}
+
+.grid-flow-d {
+  grid-auto-flow: dense;
+}
+
+@for $i from 1 through 12 {
+  .row-s-#{$i} {
+    grid-row-start: $1;
+  }
+
+  .row-span-#{$i} {
+    grid-row-end: span $i;
+  }
+
+  .col-s-#{$1} {
+    grid-column-start: $i;
+  }
+
+  .col-span-#{$i} {
+    grid-column-end: span $i;
+  }
+
+  .grid-template-rows-#{$i} {
+    grid-template-rows: repeat($i, 1fr);
+  }
+}
+
+.col-span-end {
+  grid-column-end: -1;
+}
+
+.row-span-end {
+  grid-row-end: -1;
+}
