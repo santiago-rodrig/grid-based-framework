@@ -4,6 +4,10 @@ body {
   font-family: $default;
 }
 
+button {
+  all: unset;
+}
+
 .img-fluid {
   width: 100%;
   height: auto;
@@ -122,7 +126,7 @@ body {
 
 .btn {
   border-radius: 5px;
-  @extend .shadow-block;
+  @extend .shadow-blur;
   background-color: white;
   color: $dark-grey;
   width: max-content;
@@ -155,4 +159,16 @@ body {
 
 .flex-col {
   flex-direction: column;
+}
+
+.bg-primary {
+  background-color: $white;
+}
+
+.bg-secondary {
+  background-color: $light-grey;
+}
+
+.bg-gradient {
+  background-image: linear-gradient($white, $light-grey);
 }

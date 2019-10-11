@@ -1,6 +1,9 @@
 /* font-family: 'Skranji', cursive;
 font-family: 'Open Sans', sans-serif;
 font-family: 'Open Sans Condensed', sans-serif; */
+body {
+  margin: 0;
+}
 
 .nav-header {
   padding: 0 168px;

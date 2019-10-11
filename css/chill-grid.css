@@ -4,6 +4,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+button {
+  all: unset;
+}
+
 .img-fluid {
   width: 100%;
   height: auto;
@@ -784,11 +788,11 @@ body {
   margin-left: auto;
 }
 
-.shadow-blur {
+.shadow-blur, .btn, .btn-disabled, .btn-secondary, .btn-primary {
   box-shadow: 3px 3px 10px 0 #a3aaaf;
 }
 
-.shadow-block, .btn, .btn-disabled, .btn-secondary, .btn-primary {
+.shadow-block {
   box-shadow: 3px 3px 0 0 #a3aaaf;
 }
 
@@ -844,6 +848,18 @@ body {
 
 .flex-col {
   flex-direction: column;
+}
+
+.bg-primary {
+  background-color: #fff;
+}
+
+.bg-secondary {
+  background-color: #f3f3f3;
+}
+
+.bg-gradient {
+  background-image: linear-gradient(#fff, #f3f3f3);
 }
 
 .container {
