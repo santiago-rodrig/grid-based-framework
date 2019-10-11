@@ -952,6 +952,18 @@ button {
   color: #808080;
 }
 
+.text-mid-grey-2 {
+  color: #7d7d7d;
+}
+
+.text-mid-grey-3 {
+  color: #7c7c7c;
+}
+
+.text-sand {
+  color: #cc9543;
+}
+
 .text-bold {
   font-weight: bold;
 }

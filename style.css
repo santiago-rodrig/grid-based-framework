@@ -5,6 +5,11 @@ body {
   margin: 0;
 }
 
+em {
+  font-style: normal;
+  font-size: 2rem;
+}
+
 .nav-header {
   padding: 0 168px;
 }
@@ -34,6 +39,9 @@ body {
 @media only screen and (max-width: 1024px) {
   .stack-group {
     max-width: 540px;
+  }
+  .stack-group div:nth-child(8) {
+    grid-column: 1 / -1;
   }
 }
 
