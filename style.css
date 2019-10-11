@@ -5,3 +5,11 @@ font-family: 'Open Sans Condensed', sans-serif; */
 .nav-header {
   padding: 0 168px;
 }
+
+.caret-header {
+  top: -4px;
+}
+
+.header-links a {
+  white-space: nowrap;
+}
