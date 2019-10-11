@@ -8,54 +8,58 @@
     <link rel="stylsheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/chill-grid.css" />
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans:300,400,700|Roboto&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d8dd4cbcc4.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
     <div class="container-fluid">
       <div class="grid">
-        <header class="col-span-end col-s-1">
-          <nav class="d-flex justify-c-space-between nav-header">
-            <div class="logo-container d-flex align-i-center">
-              <img src="images/logo.svg" alt="The Odin Project" />
-              <div class="logo-text">
+        <header class="col-span-end col-s-1 w-100">
+          <nav class="d-flex justify-c-space-between nav-header mx-auto fixed-top-small bg-primary">
+            <div class="logo-container d-flex align-i-center scale-down-sm-1">
+              <img src="images/logo.svg" alt="The Odin Project"/>
+              <div class="logo-text font-size-9 text-sand white-nowrap">
                 THE ODIN PROJECT
               </div>
             </div>
-            <ul class="header-links list-none d-flex align-i-center padding-0 text-mid-grey-0 text-bold">
-              <li><a class="link-reset padding-right-3" href="#">Curriculum</a></li>
-              <li><a class="link-reset padding-right-3" href="#">Community <span class="caret-header font-size-2 position-relative">▼</span></a></li>
-              <li><a class="link-reset padding-right-3" href="#">About</a></li>
-              <li><a class="link-reset padding-right-3" href="#">FAQ</a></li>
-              <li><a class="link-reset padding-left-3 border-left-2" href="#">Sign Up</a></li>
-              <li><a class="link-reset padding-left-3" href="#">Log In</a></li>
+            <a class="d-iblock-sm text-water font-size-6 padding-3">
+                <i class="fas fa-bars"></i>
+            </a>
+            <ul class="header-links list-none d-flex align-i-center padding-0 text-bold d-sm-none">
+              <li><a class="link-reset text-mid-grey-0 padding-right-3" href="#">Curriculum</a></li>
+              <li><a class="link-reset text-mid-grey-0 padding-right-3" href="#">Community <span class="caret-header font-size-2 position-relative">▼</span></a></li>
+              <li><a class="link-reset text-mid-grey-0 padding-right-3" href="#">About</a></li>
+              <li><a class="link-reset text-mid-grey-0 padding-right-3" href="#">FAQ</a></li>
+              <li><a class="link-reset text-mid-grey-0 padding-left-3 border-left-2" href="#">Sign Up</a></li>
+              <li><a class="link-reset text-mid-grey-0 padding-left-3" href="#">Log In</a></li>
             </ul>
           </nav>
-          <div class="grid bg-gradient">
+          <div class="grid bg-gradient margin-top-sm-7">
             <div class="col-s-1 col-span-end justify-self-center text-center">
-              <h1>Your Career in Web Development Starts Here</h1>
-              <p>
+              <h1 class="text-light text-sand font-size-9 top-heading">Your Career in Web Development Starts Here</h1>
+              <p class="text-mid-grey-1 top-paragraph">
                 Our full stack curriculum is free and supported by a passionate
                 open source community.
               </p>
-              <button class="btn-primary" type="button">View Full Curriculum</button>
+              <button class="btn-primary top-button" type="button">View Full Curriculum</button>
             </div>
             <div class="col-s-1 col-span-end">
               <img src="images/hero.svg" alt="" />
             </div>
           </div>
         </header>
-        <main class="col-span-end col-s-1 text-center">
-          <div class="grid mx-auto">
-          <div class="col-s-1 col-span-end justify-self-center">
-              <h2 class="text-dark-grey">How it works</h2>
+        <main class="col-span-end col-s-1 text-center font-size-5">
+          <div class="grid mx-auto gap-3 padding-bottom-10">
+          <div class="about-header col-s-1 col-span-end justify-self-center padding-11">
+              <h2 class="text-center font-size-6 font-weight-7 margin-bottom-11 text-dark-grey">How it works</h2>
               <p class="text-mid-grey-0">
                 This is the website we wish we had when we were learning on our own.
                 We scour the internet looking for only the best resources to
                 supplement your learning and present them in a logical order.
               </p>
           </div>
-            <article class="col-responsive-144">
+            <article class="col-responsive-144 padding-3 about">
               <img src="images/book.svg" alt="Book" />
               <h3 class="text-dark-grey">Learn</h3>
               <p class="text-mid-grey-0">
@@ -63,7 +67,7 @@
                 blogs, and courses.
               </p>
             </article>
-            <article class="col-responsive-144">
+            <article class="col-responsive-144 padding-3 about">
               <img src="images/computer.svg" alt="Computer" />
               <h3 class="text-dark-grey">Build</h3>
               <p class="text-mid-grey-0">
@@ -71,7 +75,7 @@
                 simple scripts to full programs and deployed websites.
               </p>
             </article>
-            <article class="col-responsive-144">
+            <article class="col-responsive-144 padding-3 about">
               <img src="images/vikings.svg" alt="Vikings Chatting" />
               <h3 class="text-dark-grey">Connect</h3>
               <p class="text-mid-grey-0">
@@ -81,8 +85,8 @@
             </article>
           </div>
         </main>
-        <section class="col-span-end col-s-1 bg-secondary text-dark-grey">
-          <h2 class="text-center">Learn everything you need to know to become a web developer</h2>
+        <section class="col-span-end col-s-1 bg-secondary text-dark-grey padding-top-6 padding-bottom-9">
+          <h2 class="text-center font-size-6 font-weight-7 margin-bottom-11">Learn everything you need to know to become a web developer</h2>
           <div class="stack-group grid mx-auto justify-i-center gap-3">
           <div class="col-responsive-124 card justify-c-center align-i-center d-flex flex-col text-center bg-primary shadow-blur">
             <img src="images/html.svg" alt="HTML" />
@@ -119,8 +123,8 @@
           </div>
         </div>
         </section>
-        <section class="col-span-end col-s-1 bg-gradient">
-          <h2 class="text-center text-dark-grey">Success stories</h2>
+        <section class="col-span-end col-s-1 bg-gradient font-size-5">
+          <h2 class="text-center font-size-6 font-weight-7 margin-bottom-11 text-dark-grey">Success Stories</h2>
           <div class="grid  mx-auto">
           <article class="col-responsive-166">
             <img src="images/pando.jpg" alt="Rob Pando"/>
@@ -159,7 +163,7 @@
             </p>
           </article>
           <div class="col-span-end col-s-1">
-            <a class="link-reset" href="#" class="text-mid-grey-3">Read more success stories</a>
+            <a class="link-reset-line" href="#" class="text-mid-grey-3">Read more success stories</a>
           </div>
           <div class="col-span-end col-s-1 d-flex flex-col align-i-center">
               <p><em>Start learning for free now!</em></p>

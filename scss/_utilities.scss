@@ -25,7 +25,12 @@ button {
 
 .w-100 { width: 100%; }
 
-.fixed-top {
+.fixed-top-r {
+  top: 0;
+  right: 0;
+}
+
+.fixed-top-l {
   top: 0;
   left: 0;
 }
@@ -52,7 +57,7 @@ button {
   }
 }
 
-@for $i from 0 to 10 {
+@for $i from 0 to 15 {
   .margin-#{$i} {
     margin: 5px * $i;
   }
@@ -83,6 +88,12 @@ button {
     font-size: 0.25rem * $i;
   }
 
+  .margin-top-sm-#{$i} {
+    @media only screen and (max-width: 720px) {
+      margin-top: 10px * $i;
+    }
+  }
+
   @if $i < 6 {
     .border-#{$i} {
       border-radius: 10% * $i;
@@ -93,6 +104,12 @@ button {
     .font-weight-#{$i} {
       font-weight: 100 * $i;
     }
+  }
+}
+
+.scale-down-sm-1 {
+  @media only screen and (max-width: 720px) {
+    transform: scale(0.7);
   }
 }
 
@@ -121,6 +138,10 @@ button {
 
 .link-reset {
   text-decoration: none;
+  color: $black;
+}
+
+.link-reset-line {
   color: $black;
 }
 
@@ -202,6 +223,22 @@ button {
   color: $copper;
 }
 
+.text-water {
+  color: $ocean;
+}
+
 .text-bold {
   font-weight: bold;
+}
+
+.text-light {
+  font-weight: lighter;
+}
+
+.text-regular {
+  font-weight: normal;
+}
+
+.white-nowrap {
+  white-space: nowrap;
 }
