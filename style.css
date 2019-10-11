@@ -1,12 +1,34 @@
 /* font-family: 'Skranji', cursive;
 font-family: 'Open Sans', sans-serif;
 font-family: 'Open Sans Condensed', sans-serif; */
+
+@font-face {
+	font-family: "Norse Bold";
+	font-style: normal;
+	font-weight: bold;
+	src: url("fonts/Norsebold.otf");
+}
+
 body {
+  font-family: "Open Sans", sans-serif;
   margin: 0;
 }
 
 .nav-header {
   padding: 0 168px;
+}
+
+.top-heading {
+  margin-top: 60px;
+}
+
+.top-paragraph {
+  font-size: 1.1rem;
+}
+
+.top-button {
+  margin-top: 60px;
+  margin-bottom: 60px
 }
 
 .caret-header {
@@ -15,6 +37,11 @@ body {
 
 .header-links a {
   white-space: nowrap;
+}
+
+.logo-text {
+  font-family: "Norse Bold", sans-serif;
+  text-shadow: 1px 1px 1px #cc9543;
 }
 
 .fab {
