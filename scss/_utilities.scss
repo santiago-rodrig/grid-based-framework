@@ -52,7 +52,7 @@ button {
   }
 }
 
-@for $i from 1 to 10 {
+@for $i from 0 to 10 {
   .margin-#{$i} {
     margin: 5px * $i;
   }
@@ -62,7 +62,7 @@ button {
   }
 
   .border-s-#{$i} {
-    border: $i solid;
+    border: $i * 1px solid;
   }
 
   @each $side in $sides {
@@ -75,7 +75,7 @@ button {
     }
 
     .border-#{$side}-#{$i} {
-      border-#{$side}: $i solid;
+      border-#{$side}: $i * 1px solid;
     }
   }
 
@@ -121,7 +121,7 @@ button {
 
 .link-reset {
   text-decoration: none;
-  color: inherit;
+  color: $black;
 }
 
 .btn {
@@ -131,11 +131,16 @@ button {
   color: $dark-grey;
   width: max-content;
   padding: 16px 56px;
+  font-weight: bold;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .btn-primary {
   @extend .btn;
   background-color: $ocean;
+  color: white;
   &:hover {
     background-color: lighten($ocean, 10%);
   }
@@ -143,9 +148,10 @@ button {
 
 .btn-secondary {
   @extend .btn;
-  background-color: lighten($ocean, 20%);
+  background-color: $copper;
+  color: white;
   &:hover {
-    background-color: lighten($ocean, 30%);
+    background-color: lighten($copper, 30%);
   }
 }
 
@@ -171,4 +177,19 @@ button {
 
 .bg-gradient {
   background-image: linear-gradient($white, $light-grey);
+}
+.text-dark-grey {
+  color: $dark-grey;
+}
+
+.text-mid-grey-1 {
+  color: $mid-grey-1;
+}
+
+.text-mid-grey-0 {
+  color: $mid-grey-0;
+}
+
+.text-bold {
+  font-weight: bold;
 }
