@@ -125,6 +125,7 @@ body {
   @extend .shadow-block;
   background-color: white;
   color: $dark-grey;
+  width: max-content;
   padding: 16px 56px;
 }
 
@@ -150,4 +151,8 @@ body {
   &:hover {
     cursor: default;
   }
+}
+
+.flex-col {
+  flex-direction: column;
 }
