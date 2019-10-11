@@ -140,7 +140,7 @@ body {
   @extend .btn;
   background-color: lighten($ocean, 20%);
   &:hover {
-    background-color: lighten($ocena, 30%);
+    background-color: lighten($ocean, 30%);
   }
 }
 

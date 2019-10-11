@@ -1,143 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viwport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>The Odin Project</title>
+    <link rel="stylsheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/chill-grid.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viwport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>The Odin Project</title>
-  <link rel="stylsheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/chill-grid.css">
-  <link rel="stylesheet" href="style.css">
-
-</head>
-
-<body>
-  <div class="container-fluid">
-    <div class="grid">
-      <header class="col-span-end col-s-1">
-        <nav class="d-flex justify-c-space-between nav-header">
-          <div class="logo-container d-flex align-i-center">
-            <img src="images/logo.svg" alt="The Odin Project">
-            <div class="logo-text">
-              THE ODIN PROJECT
+  <body>
+    <div class="container-fluid">
+      <div class="grid">
+        <header class="col-span-end col-s-1">
+          <nav class="d-flex justify-c-space-between nav-header">
+            <div class="logo-container d-flex align-i-center">
+              <img src="images/logo.svg" alt="The Odin Project" />
+              <div class="logo-text">
+                THE ODIN PROJECT
+              </div>
+            </div>
+            <ul class="list-none d-flex align-i-center">
+              <li><a class="link-reset" href="#">Curriculum</a></li>
+              <li><a class="link-reset" href="#">Community</a></li>
+              <li><a class="link-reset" href="#">About</a></li>
+              <li><a class="link-reset" href="#">FAQ</a></li>
+              <li><a class="link-reset" href="#">Sign Up</a></li>
+              <li><a class="link-reset" href="#">Log In</a></li>
+            </ul>
+          </nav>
+          <div class="grid">
+            <div class="col-s-1 col-span-end justify-self-center text-center">
+              <h1>Your Career in Web Development Starts Here</h1>
+              <p>
+                Our full stack curriculum is free and supported by a passionate
+                open source community.
+              </p>
+              <button type="button">View Full Curriculum</button>
+            </div>
+            <div class="col-s-1 col-span-end">
+              <img src="images/hero.svg" alt="" />
             </div>
           </div>
-          <ul class="list-none d-flex align-i-center">
-            <li><a class="link-reset" href="#">Curriculum</a></li>
-            <li><a class="link-reset" href="#">Community</a></li>
-            <li><a class="link-reset" href="#">About</a></li>
-            <li><a class="link-reset" href="#">FAQ</a></li>
-            <li><a class="link-reset" href="#">Sign Up</a></li>
-            <li><a class="link-reset" href="#">Log In</a></li>
-          </ul>
-        </nav>
-        <div>
-          <h1>Your Career in Web Development Starts Here</h1>
-          <p>Our full stack curriculum is free and supported by a passionate open source community.</p>
-          <button type="button">View Full Curriculum</button>
-        </div>
-        <div></div>
-      </header>
-      <main class="col-span-end col-s-1">
-        <h2>How it works</h2>
-        <p>This is the website we wish we had when we were learning on our own. We scour the internet looking for only the best resources to supplement your learning and present them in a logical order.</p>
-        <div>
-          <article>
-            <img src="images/book.svg" alt="Book">
-            <h3>Learn</h3>
-            <p>Learn from a curriculum with the best curated online tutorials, blogs, and courses.</p>
+        </header>
+        <main class="col-span-end col-s-1 grid text-center mx-auto">
+          <div class="col-s-1 col-span-end justify-self-center">
+              <h2>How it works</h2>
+              <p>
+                This is the website we wish we had when we were learning on our own.
+                We scour the internet looking for only the best resources to
+                supplement your learning and present them in a logical order.
+              </p>
+          </div>
+            <article class="col-responsive-144">
+              <img src="images/book.svg" alt="Book" />
+              <h3>Learn</h3>
+              <p>
+                Learn from a curriculum with the best curated online tutorials,
+                blogs, and courses.
+              </p>
+            </article>
+            <article class="col-responsive-144">
+              <img src="images/computer.svg" alt="Computer" />
+              <h3>Build</h3>
+              <p>
+                Build dozens of portfolio-worthy projects along the way, from
+                simple scripts to full programs and deployed websites.
+              </p>
+            </article>
+            <article class="col-responsive-144">
+              <img src="images/vikings.svg" alt="Vikings Chatting" />
+              <h3>Connect</h3>
+              <p>
+                You’re not alone. Learn and get help from our friendly community
+                of beginner and experienced developers.
+              </p>
+            </article>
+        </main>
+        <section class="col-span-end col-s-1 grid mx-auto">
+          <h2 class="col-s-1 col-span-end">Learn everything you need to know to become a web developer</h2>
+          <div class="col-responsive-124">
+            <img src="images/html.svg" alt="HTML" />
+            <h3>HTML + CSS</h3>
+          </div>
+          <div class="col-responsive-124">
+            <img src="images/javascript.svg" alt="JavaScript" />
+            <h3>JAVASCRIPT</h3>
+          </div>
+          <div class="col-responsive-124">
+            <img src="images/git.svg" alt="Git" />
+            <h3>GIT</h3>
+          </div>
+          <div class="col-responsive-124">
+            <img src="images/databases.svg" alt="Databases" />
+            <h3>DATABASES</h3>
+          </div>
+          <div class="col-responsive-124">
+            <img src="images/ruby.svg" alt="Ruby" />
+            <h3>RUBY</h3>
+          </div>
+          <div class="col-responsive-124">
+            <img src="images/rails.svg" alt="Rails" />
+            <h3>RUBY ON RAILS</h3>
+          </div>
+          <div class="col-responsive-124 d-md-none"></div>
+          <div class="col-responsive-124">
+            <img src="images/work.svg" alt="Suitcase" />
+            <h3>GETTING HIRED</h3>
+          </div>
+          <div class="col-responsive-124 d-md-none"></div>
+          <div class="col-s-1 col-span-end d-flex justify-c-center">
+            <button type="button">Get Started</button>
+          </div>
+        </section>
+        <section class="col-span-end col-s-1 mx-auto grid">
+          <h2 class="col-span-end col-s-1">Success stories</h2>
+          <article class="col-responsive-166">
+            <img src="images/pando.jpg" alt="Rob Pando" />
+            <p>
+              TOP was a perfect match for my learning style. Not walking me
+              through an entire project but actually forcing me to figure it out
+              on my own, by pointing me...
+            </p>
           </article>
-          <article>
-            <img src="images/computer.svg" alt="Computer">
-            <h3>Build</h3>
-            <p>Build dozens of portfolio-worthy projects along the way, from simple scripts to full programs and deployed websites.</p>
+          <article class="col-responsive-166">
+            <img src="images/olivia.png" alt="Olivia" />
+            <p>
+              Before I found TOP, I was jumping from Coursera course to Coursera
+              course without really any guidance or community. I wanted to get a
+              real development job and not operating...
+            </p>
           </article>
-          <article>
-            <img src="images/vikings.svg" alt="Vikings Chatting">
-            <h3>Connect</h3>
-            <p>You’re not alone. Learn and get help from our friendly community of beginner and experienced developers.</p>
+          <article class="col-responsive-166">
+            <img src="images/cody.jpg" alt="Cody Loyd" />
+            <p>
+              Before I started the Odin Project I had literally ZERO programming
+              experience. After almost exactly a year of working through the
+              program, I was offered a job as a front...
+            </p>
           </article>
-        </div>
-      </main>
-      <section class="col-span-end col-s-1">
-        <h2>Learn everything you need to know to become a web developer</h2>
-        <div>
-          <img src="images/html.svg" alt="HTML">
-          <h3>HTML + CSS</h3>
-        </div>
-        <div>
-          <img src="images/javascript.svg" alt="JavaScript">
-          <h3>JAVASCRIPT</h3>
-        </div>
-        <div>
-          <img src="images/git.svg" alt="Git">
-          <h3>GIT</h3>
-        </div>
-        <div>
-          <img src="images/databases.svg" alt="Databases">
-          <h3>DATABASES</h3>
-        </div>
-        <div>
-          <img src="images/ruby.svg" alt="Ruby">
-          <h3>RUBY</h3>
-        </div>
-        <div>
-          <img src="images/rails.svg" alt="Rails">
-          <h3>RUBY ON RAILS</h3>
-        </div>
-        <div>
-          <img src="images/work.svg" alt="Suitcase">
-          <h3>GETTING HIRED</h3>
-        </div>
-        <div>
-          <button type="button">Get Started</button>
-        </div>
-      </section>
-      <section class="col-span-end col-s-1">
-        <h2>Success stories</h2>
-        <article>
-          <img src="images/pando.jpg" alt="Rob Pando">
-          <p>TOP was a perfect match for my learning style. Not walking me through an entire project but actually forcing me to figure it out on my own, by pointing me...</p>
-        </article>
-        <article>
-          <img src="images/olivia.jpg" alt="Olivia">
-          <p>Before I found TOP, I was jumping from Coursera course to Coursera course without really any guidance or community. I wanted to get a real development job and not operating...</p>
-        </article>
-        <article>
-          <img src="images/cody.jpg" alt="Cody Loyd">
-          <p>Before I started the Odin Project I had literally ZERO programming experience. After almost exactly a year of working through the program, I was offered a job as a front...</p>
-        </article>
-        <article>
-          <img src="images/william.jpg" alt="William Kennedy">
-          <p>The Odin Project changed my life and that is not an understatement. In November 2013, I made a commitment to myself to become a self-taught developer so I threw myself...</p>
-        </article>
-        <div>
-          <a href="#">Read more success stories</a>
-        </div>
-        <p><em>Start learning for free now!</em></p>
-        <button type="button">Sign Up</button>
-      </section>
-      <footer class="col-span-end col-s-1">
-        <div>
-          <img src="images/logo.svg" alt="The Odin Project">
-        </div>
-        <ul>
-          <li><a href="#"></a></li>
-        </ul>
-        <nav>
+          <article class="col-responsive-166">
+            <img src="images/william.jpg" alt="William Kennedy" />
+            <p>
+              The Odin Project changed my life and that is not an
+              understatement. In November 2013, I made a commitment to myself to
+              become a self-taught developer so I threw myself...
+            </p>
+          </article>
+          <div class="col-span-end col-s-1">
+            <a href="#">Read more success stories</a>
+          </div>
+          <div class="col-span-end col-s-1 d-flex justify-c-center">
+              <p><em>Start learning for free now!</em></p>
+              <button type="button">Sign Up</button>
+          </div>
+        </section>
+        <footer class="col-span-end col-s-1">
+          <div>
+            <img src="images/logo.svg" alt="The Odin Project" />
+          </div>
           <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Success Stories</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Contribute</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#"></a></li>
           </ul>
-        </nav>
-      </footer>
+          <nav>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Success Stories</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Contribute</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Terms of Use</a></li>
+            </ul>
+          </nav>
+        </footer>
+      </div>
     </div>
-  </div>
-</body>
-
+  </body>
 </html>

@@ -130,6 +130,10 @@
   @include span(4);
 }
 
+.col-responsive-166 {
+  @include span(6);
+}
+
 .d-iblock-sm {
   display: none;
   @media only screen and (max-width: 720px) {
@@ -141,24 +145,27 @@
   @include set_display($d);
 }
 
-@media only screen and (max-width: 719px) {
-  .col-responsive-136, .col-responsive-1612, .col-responsive-124, .col-responsive-144 {
-    @include span(12);
-  }
-  .col-responsive-234 {
-    @include span(6);
-  }
-}
-
 @media only screen and (max-width: 1023px) {
   .col-responsive-124 {
-    @include span(2);
+    @include span(6);
   }
   .col-responsive-136
   .col-responsive-234 {
     @include span(4);
   }
   .col-responsive-1612 {
+    @include span(6);
+  }
+  .col-responsive-166 {
+    @include span(12);
+  }
+}
+
+@media only screen and (max-width: 719px) {
+  .col-responsive-136, .col-responsive-1612, .col-responsive-124, .col-responsive-144 {
+    @include span(12);
+  }
+  .col-responsive-234 {
     @include span(6);
   }
 }

@@ -1,5 +1,5 @@
-@mixin span($num, $dim: "row") {
-  grid-#{dim}-end: $num;
+@mixin span($num, $dim: "column") {
+  grid-#{$dim}: span $num;
 }
 
 @mixin set_display($val) {
