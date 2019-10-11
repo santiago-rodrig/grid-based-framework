@@ -1,5 +1,9 @@
 @import 'variables';
 
+body {
+  font-family: $default;
+}
+
 .img-fluid {
   width: 100%;
   height: auto;
@@ -114,4 +118,36 @@
 .link-reset {
   text-decoration: none;
   color: inherit;
+}
+
+.btn {
+  border-radius: 5px;
+  @extend .shadow-block;
+  background-color: white;
+  color: $dark-grey;
+  padding: 16px 56px;
+}
+
+.btn-primary {
+  @extend .btn;
+  background-color: $ocean;
+  &:hover {
+    background-color: lighten($ocean, 10%);
+  }
+}
+
+.btn-secondary {
+  @extend .btn;
+  background-color: lighten($ocean, 20%);
+  &:hover {
+    background-color: lighten($ocena, 30%);
+  }
+}
+
+.btn-disabled {
+  @extend .btn;
+  background-color: desaturate($ocean, 100%);
+  &:hover {
+    cursor: default;
+  }
 }
