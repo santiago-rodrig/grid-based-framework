@@ -23,3 +23,6 @@ developing websites.
 - [W3C Markup Validator](https://validator.w3.org/#validate_by_upload)
 - [960 grid framework](https://960.gs)
 - [Bootstrap 4](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
+
+## License
+MIT
