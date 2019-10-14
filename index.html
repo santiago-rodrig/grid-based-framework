@@ -16,10 +16,10 @@
   <div class="container-fluid">
     <div class="grid">
       <header class="col-span-end col-s-1 w-100">
-        <nav class="d-flex justify-c-space-between nav-header mx-auto fixed-top-small bg-primary">
+        <nav class="d-flex justify-c-space-between nav-header mx-auto fixed-top-small bg-primary padding-top-3">
           <div class="logo-container d-flex align-i-center scale-down-sm-1">
             <img src="images/logo.svg" alt="The Odin Project"/>
-            <div class="logo-text font-size-9 text-sand white-nowrap">
+            <div class="logo-text font-size-7 text-sand white-nowrap">
               THE ODIN PROJECT
             </div>
           </div>
@@ -44,7 +44,7 @@
             </p>
             <button class="btn-primary top-button" type="button">View Full Curriculum</button>
           </div>
-          <div class="col-s-1 col-span-end">
+          <div class="col-s-1 col-span-end d-flex">
             <img src="images/hero.svg" alt="" />
           </div>
         </div>
@@ -88,32 +88,32 @@
       <section class="col-span-end col-s-1 bg-secondary text-dark-grey padding-top-6 padding-bottom-9">
         <h2 class="text-center font-size-6 font-weight-7 margin-bottom-11">Learn everything you need to know to become a web developer</h2>
         <div class="stack-group grid mx-auto justify-i-center gap-3">
-          <div class="col-responsive-124 card justify-c-center align-i-center d-flex flex-col text-center bg-primary shadow-blur">
+          <div class="col-responsive-124 card justify-c-center align-i-center d-flex flex-col text-center bg-primary shadow-blur-wide">
             <img src="images/html.svg" alt="HTML" />
             <h3>HTML + CSS</h3>
           </div>
-          <div class="col-responsive-124 card justify-c-center align-i-center d-flex flex-col text-center bg-primary shadow-blur">
+          <div class="col-responsive-124 card justify-c-center align-i-center d-flex flex-col text-center bg-primary shadow-blur-wide">
             <img src="images/javascript.svg" alt="JavaScript" />
             <h3>JAVASCRIPT</h3>
           </div>
-          <div class="col-responsive-124 card justify-c-center align-i-center d-flex flex-col text-center bg-primary shadow-blur">
+          <div class="col-responsive-124 card justify-c-center align-i-center d-flex flex-col text-center bg-primary shadow-blur-wide">
             <img src="images/git.svg" alt="Git" />
             <h3>GIT</h3>
           </div>
-          <div class="col-responsive-124 card justify-c-center align-i-center d-flex flex-col text-center bg-primary shadow-blur">
+          <div class="col-responsive-124 card justify-c-center align-i-center d-flex flex-col text-center bg-primary shadow-blur-wide">
             <img src="images/databases.svg" alt="Databases" />
             <h3>DATABASES</h3>
           </div>
-          <div class="col-responsive-124 card justify-c-center align-i-center d-flex flex-col text-center bg-primary shadow-blur">
+          <div class="col-responsive-124 card justify-c-center align-i-center d-flex flex-col text-center bg-primary shadow-blur-wide">
             <img src="images/ruby.svg" alt="Ruby" />
             <h3>RUBY</h3>
           </div>
-          <div class="col-responsive-124 card justify-c-center align-i-center d-flex flex-col text-center bg-primary shadow-blur">
+          <div class="col-responsive-124 card justify-c-center align-i-center d-flex flex-col text-center bg-primary shadow-blur-wide">
             <img src="images/rails.svg" alt="Rails" />
             <h3>RUBY ON RAILS</h3>
           </div>
           <div class="col-responsive-124 d-md-none"></div>
-          <div class="col-responsive-124 card justify-c-center align-i-center d-flex flex-col text-center bg-primary shadow-blur">
+          <div class="col-responsive-124 card justify-c-center align-i-center d-flex flex-col text-center bg-primary shadow-blur-wide">
             <img src="images/work.svg" alt="Suitcase" />
             <h3>GETTING HIRED</h3>
           </div>
@@ -187,26 +187,29 @@
           </div>
         </div>
       </section>
-      <footer class="col-span-end col-s-1">
-        <div>
-          <img src="images/logo.svg" alt="The Odin Project" />
+      <footer id="footer" class="col-span-end col-s-1 d-flex padding-14 justify-c-space-between align-i-center">
+        <div class="logo-container d-flex align-i-center scale-down-sm-1 d-sm-none">
+          <img src="images/logo.svg" alt="The Odin Project"/>
+          <div class="logo-text font-size-5 text-sand white-nowrap">
+            THE ODIN PROJECT
+          </div>
         </div>
-        <ul class="list-none d-flex">
-          <li><a class="link-reset padding-right-3" href="#"><i class="fab fa-github"></i></a></li>
-          <li><a class="link-reset padding-right-3" href="#"><i class="fab fa-discord"></i></a></li>
-          <li><a class="link-reset padding-right-3" href="#"><i class="fab fa-facebook-square"></i></a></li>
-          <li><a class="link-reset padding-right-3" href="#"><i class="fab fa-twitter"></i></a></li>
+        <ul class="list-none d-flex font-size-6 social-media">
+          <li><a class="link-reset padding-right-4" href="#"><i class="fab fa-github"></i></a></li>
+          <li><a class="link-reset padding-right-4" href="#"><i class="fab fa-discord"></i></a></li>
+          <li><a class="link-reset padding-right-4" href="#"><i class="fab fa-facebook-square"></i></a></li>
+          <li><a class="link-reset padding-right-4" href="#"><i class="fab fa-twitter"></i></a></li>
         </ul>
-        <nav>
-          <ul class="header-links list-none d-flex flex-col align-i-center padding-0 text-mid-grey-0 text-bold">
-            <li><a class="link-reset padding-right-3" href="#">About</a></li>
-            <li><a class="link-reset padding-right-3" href="#">FAQ</a></li>
-            <li><a class="link-reset padding-right-3" href="#">Blog</a></li>
+        <nav class="d-flex footer-nav">
+          <ul class="header-links list-none d-flex flex-col padding-0 text-bold margin-right-9">
+            <li><a class="link-reset padding-right-3 text-mid-grey-0" href="#">About</a></li>
+            <li><a class="link-reset padding-right-3 text-mid-grey-0" href="#">FAQ</a></li>
+            <li><a class="link-reset padding-right-3 text-mid-grey-0" href="#">Blog</a></li>
           </ul>
-          <ul class="header-links list-none d-flex flex-col align-i-center padding-0 text-mid-grey-0 text-bold">
-            <li><a class="link-reset padding-right-3" href="#">Success Stories</a></li>
-            <li><a class="link-reset padding-right-3" href="#">Contribute</a></li>
-            <li><a class="link-reset padding-right-3" href="#">Terms of Use</a></li>
+          <ul class="header-links list-none d-flex flex-col padding-0 text-bold">
+            <li><a class="link-reset padding-right-3 text-mid-grey-0" href="#">Success Stories</a></li>
+            <li><a class="link-reset padding-right-3 text-mid-grey-0" href="#">Contribute</a></li>
+            <li><a class="link-reset padding-right-3 text-mid-grey-0" href="#">Terms of Use</a></li>
           </ul>
         </nav>
       </footer>

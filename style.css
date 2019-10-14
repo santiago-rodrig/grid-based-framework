@@ -13,6 +13,7 @@ body {
   font-family: "Open Sans", sans-serif;
   margin: 0;
   line-height: 200%;
+  overflow-x: hidden;
 }
 
 em {
@@ -24,6 +25,7 @@ em {
   max-width: 1100px;
   width: 85%;
   box-sizing: border-box;
+  z-index: 10;
 }
 
 .nav-header > a {
@@ -52,12 +54,18 @@ em {
 }
 
 .logo-container img {
-  margin-right: 15px;
+  margin-right: 10px;
+  width: 45.2px;
 }
 
 .logo-text {
   font-family: "Norse Bold", sans-serif;
   text-shadow: 1px 1px 1px #cc9543;
+  margin-right: 10px;
+}
+
+footer .logo-text {
+  text-shadow: 0.5px 1px 0 #cc9543;
 }
 
 .fab {
@@ -94,10 +102,11 @@ em {
     width: 100%;
     height: 70px;
     justify-content: space-between;
+    padding-top: unset;
   }
 
   .logo-container {
-    margin-left: -30px;
+    margin-left: -10px;
   }
 
   .card {
@@ -113,6 +122,38 @@ em {
   .about {
     padding: 10px 90px;
   }
+
+  .social-media {
+    padding-left: 10px;
+    flex: 1;
+    justify-content: space-around;
+  }
+
+  .footer-nav {
+    flex-basis: 45%;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  #footer {
+    padding: 10px 0;
+  }
+}
+
+@media only screen and (max-width: 464px) {
+  footer .header-links {
+    display: none;
+ }
+
+ .social-media {
+  padding-left: 0;
+  flex-basis: 100%;
+  width: 100vw;
+}
+
+.footer-nav {
+  flex-basis: 0;
+}
 }
 
 .story-img {

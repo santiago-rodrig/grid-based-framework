@@ -109,7 +109,7 @@ button {
 
 .scale-down-sm-1 {
   @media only screen and (max-width: 720px) {
-    transform: scale(0.7);
+    transform: scale(0.8);
   }
 }
 
@@ -119,12 +119,21 @@ button {
 }
 
 .shadow-blur {
-  box-shadow: 3px 3px 10px 0 $shadow;
+  box-shadow: 0px 1px 3px 1px $shadow;
 }
 
 .shadow-block {
-  box-shadow: 3px 3px 0 0 $shadow;
+  box-shadow: 0px 1px 0 1px $shadow;
 }
+
+.shadow-blur-wide {
+  box-shadow: 0 3px 10px 1px $light-grey-1;
+}
+
+.shadow-block-wide {
+  box-shadow: 0 3px 0 10px $light-grey-1;
+}
+
 
 @each $val in $talign {
   .text-#{$val} {
