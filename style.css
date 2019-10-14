@@ -49,23 +49,57 @@ em {
   top: -4px;
 }
 
+a:hover {
+	color: black;
+	transition: all 0.4s ease;
+}
+
 .header-links a {
   white-space: nowrap;
 }
 
+.logo-container {
+	position: relative;
+}
+
+.logo-container a {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: block;
+	top: 0;
+	left: 0;
+}
+
 .logo-container img {
   margin-right: 10px;
-  width: 45.2px;
+  width: 52.7px;
 }
 
 .logo-text {
   font-family: "Norse Bold", sans-serif;
   text-shadow: 1px 1px 1px #cc9543;
   margin-right: 10px;
+	font-size: 1.6rem;
 }
 
 footer .logo-text {
   text-shadow: 0.5px 1px 0 #cc9543;
+}
+
+footer .social-media {
+	flex-basis: 22%;
+	padding: 0;
+	justify-content: space-between;
+}
+
+footer .social-media a:hover i {
+	color: black;
+	transition: all 0.4s ease;
+}
+
+.sign-up-bottom {
+	font-size: 1rem;
 }
 
 .fab {
@@ -85,6 +119,10 @@ footer .logo-text {
 .about-header {
   width: 80%;
   max-width: 570px;
+}
+
+#footer {
+	padding: 60px 140px;
 }
 
 @media only screen and (max-width: 1024px) {
