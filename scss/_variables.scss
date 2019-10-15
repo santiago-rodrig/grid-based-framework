@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400,700,900&display=swap');
+
+$container-width: 960px;
+$items: center, start, end;
+$content: center, space-between, space-around;
+$spacing: ("0": 0,"1": 5px, "2": 10px, "3": 30px);
+$displays: block, inline-block, flex, none, inherit;
+$position: static, fixed, absolute, relative, sticky;
+$overflow: auto, scroll, hidden, show;
+$talign: left, right, center;
+$sides: top, left, right, bottom;
+$sizes: (small: "max-width: 719px", medium: "max-width: 1023px", large: "min-width: 1024px");
+
+$shadow: #a3aaaf;
+$dark-grey: #4a4a4a;
+$mid-grey-3: #7c7c7c;
+$mid-grey-2: #7d7d7d;
+$mid-grey-1: #7f7f7f;
+$mid-grey-0: #808080;
+$light-grey-1: #e2e2e2;
+$light-grey: #f3f3f3;
+$white: #fff;
+$black: #000;
+$ocean: #6abfc3;
+$copper: #cc9543;
+
+$default: 'Roboto', sans-serif;

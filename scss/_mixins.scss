@@ -1,0 +1,21 @@
+@mixin span($num, $dim: "column") {
+  grid-#{$dim}: span $num;
+}
+
+@mixin set_display($val) {
+  .d-#{$val} {
+    display: $val;
+  }
+
+  .d-md-#{$val} {
+    @media only screen and (max-width: 1023px) {
+      display: $val;
+    }
+  }
+
+  .d-sm-#{$val} {
+    @media only screen and (max-width: 719px) {
+      display: $val;
+    }
+  }
+}

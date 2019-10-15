@@ -1,0 +1,257 @@
+@import 'variables';
+
+body {
+  font-family: $default;
+}
+
+button {
+  all: unset;
+}
+
+.img-fluid {
+  width: 100%;
+  height: auto;
+}
+
+.img-container {
+  overflow: auto;
+}
+
+@each $val in $position {
+  .position-#{$val} {
+    position: $val;
+  }
+}
+
+.w-100 { width: 100%; }
+
+.fixed-top-r {
+  top: 0;
+  right: 0;
+}
+
+.fixed-top-l {
+  top: 0;
+  left: 0;
+}
+
+.fixed-bottom {
+  bottom: 0;
+  left: 0;
+}
+
+@each $side in $sides {
+  @each $size, $query in $sizes {
+    .fixed-#{$side}-#{$size} {
+      @media only screen and (#{$query}) {
+        position: fixed;
+        #{side}: 0;
+      }
+    }
+  }
+}
+
+@each $val in $overflow {
+  .overflow-#{$val} {
+    overflow: $val;
+  }
+}
+
+@for $i from 0 to 15 {
+  .margin-#{$i} {
+    margin: 5px * $i;
+  }
+
+  .padding-#{$i} {
+    padding: 5px * $i;
+  }
+
+  .border-s-#{$i} {
+    border: $i * 1px solid;
+  }
+
+  @each $side in $sides {
+    .margin-#{$side}-#{$i} {
+      margin-#{$side}: 5px * $i;
+    }
+
+    .padding-#{$side}-#{$i} {
+      padding-#{$side}: 5px * $i;
+    }
+
+    .border-#{$side}-#{$i} {
+      border-#{$side}: $i * 1px solid;
+    }
+  }
+
+  .font-size-#{$i} {
+    font-size: 0.25rem * $i;
+  }
+
+  .margin-top-sm-#{$i} {
+    @media only screen and (max-width: 720px) {
+      margin-top: 10px * $i;
+    }
+  }
+
+  @if $i < 6 {
+    .border-#{$i} {
+      border-radius: 10% * $i;
+    }
+  }
+
+  @if $i < 10 {
+    .font-weight-#{$i} {
+      font-weight: 100 * $i;
+    }
+  }
+}
+
+.scale-down-sm-1 {
+  @media only screen and (max-width: 720px) {
+    transform: scale(0.8);
+  }
+}
+
+.mx-auto {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.shadow-blur {
+  box-shadow: 0px 1px 3px 1px $shadow;
+}
+
+.shadow-block {
+  box-shadow: 0px 1px 0 1px $shadow;
+}
+
+.shadow-blur-wide {
+  box-shadow: 0 3px 10px 1px $light-grey-1;
+}
+
+.shadow-block-wide {
+  box-shadow: 0 3px 0 10px $light-grey-1;
+}
+
+
+@each $val in $talign {
+  .text-#{$val} {
+    text-align: $val;
+  }
+}
+
+.list-none {
+  list-style: none;
+}
+
+.link-reset {
+  text-decoration: none;
+  color: $black;
+}
+
+.link-reset-line {
+  color: $black;
+}
+
+.btn {
+  border-radius: 5px;
+  @extend .shadow-blur;
+  background-color: white;
+  color: $dark-grey;
+  width: max-content;
+  padding: 16px 56px;
+  font-weight: bold;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.btn-primary {
+  @extend .btn;
+  background-color: $ocean;
+  color: white;
+  &:hover {
+    background-color: lighten($ocean, 10%);
+  }
+}
+
+.btn-secondary {
+  @extend .btn;
+  background-color: $copper;
+  color: white;
+  &:hover {
+    background-color: lighten($copper, 30%);
+  }
+}
+
+.btn-disabled {
+  @extend .btn;
+  background-color: desaturate($ocean, 100%);
+  &:hover {
+    cursor: default;
+  }
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.bg-primary {
+  background-color: $white;
+}
+
+.bg-secondary {
+  background-color: $light-grey;
+}
+
+.bg-gradient {
+  background-image: linear-gradient($white, $light-grey);
+}
+.text-dark-grey {
+  color: $dark-grey;
+}
+
+.text-mid-grey-1 {
+  color: $mid-grey-1;
+}
+
+.text-mid-grey-0 {
+  color: $mid-grey-0;
+}
+
+.text-mid-grey-2 {
+  color: $mid-grey-2;
+}
+
+.text-mid-grey-3 {
+  color: $mid-grey-3;
+}
+
+.text-sand {
+  color: $copper;
+}
+
+.text-water {
+  color: $ocean;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-light {
+  font-weight: lighter;
+}
+
+.text-regular {
+  font-weight: normal;
+}
+
+.white-nowrap {
+  white-space: nowrap;
+}
+
+.rounded {
+  border-radius: 50%;
+}
